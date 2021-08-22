@@ -12,8 +12,11 @@ When the start button is clicked, a timer starts and the user is shown the first
 https://camjade.github.io/Code-Quiz/
 
 ## Screenshots
+![Welcome to quiz](/Assets/WelcomePage.png)
 ![Question Correct](/Assets/CorrectAnswer.png)
 ![Question Wrong](/Assets/WrongAnswer.png)
+![High scores](/Assets/HighscorePage.png)
+![End of quiz](/Assets/inputInitials.png)
 
 
 ## Reference

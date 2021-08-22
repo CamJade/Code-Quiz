@@ -15,7 +15,7 @@ scoreList = JSON.parse(scoreList);
 if (scoreList !== null) {
 
     for (var i = 0; i < scoreList.length; i++) {
-        //create list items for each score
+        //create list items for each
         let createLi = document.createElement("li");
         createLi.textContent = scoreList[i].initials + " " + scoreList[i].score;
         highScore.appendChild(createLi);
