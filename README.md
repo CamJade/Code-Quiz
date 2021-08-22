@@ -15,9 +15,8 @@ https://camjade.github.io/Code-Quiz/
 ![Welcome to quiz](/Assets/WelcomePage.png)
 ![Question Correct](/Assets/CorrectAnswer.png)
 ![Question Wrong](/Assets/WrongAnswer.png)
-![High scores](/Assets/HighscorePage.png)
 ![End of quiz](/Assets/inputInitials.png)
-
+![High scores](/Assets/HighscorePage.png)
 
 ## Reference
 The quiz questions were taken from the demo.
