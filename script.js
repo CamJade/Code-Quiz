@@ -45,7 +45,8 @@ let score = 0;
 let questionIndex = 0;
 let timerInt;
 
-
+//TODO- need to find way to hide buttons and reappear on click
+optionButtons.innerHTML = "";
 //event listener to wait for user to click start and is connected to startQuiz function
 startButton.addEventListener("click", startQuiz);
 
@@ -111,7 +112,7 @@ function checkAnswer(event) {
   questionPlace.appendChild(showAnswer);
 }
 
-//displays the score based on seconds remaining
+//displays the score based on number of correct answers
 function displayScore() {
   questionPlace.innerHTML = "";
   secondsRemaining = "";
@@ -124,10 +125,59 @@ function displayScore() {
     if (secondsRemaining >= 0) {
         let createPara = document.createElement("p");
         clearInterval(timerInt);
-        createPara.textContent = "Your score is: " + secondsRemaining;
+        createPara.textContent = "Your score is: " + score;
 
         questionPlace.appendChild(createPara);
     }
+//need to fix
+    let createLabel = document.createElement("label");
+    createLabel.setAttribute("id", "createLabel");
+    createLabel.textContent = "Enter your initials: ";
 
+    questionPlace.appendChild(createLabel);
+
+    // input
+    let createInput = document.createElement("input");
+    createInput.setAttribute("type", "text");
+    createInput.setAttribute("id", "initials");
+    createInput.textContent = "";
+
+    questionPlace.appendChild(createInput);
+
+    // submit
+    let createSubmit = document.createElement("button");
+    createSubmit.setAttribute("type", "submit");
+    createSubmit.setAttribute("id", "Submit");
+    createSubmit.textContent = "Submit";
+
+    questionPlace.appendChild(createSubmit);
+
+    // Event listener to capture initials and local storage for initials and score
+    createSubmit.addEventListener("click", function () {
+        let initials = createInput.value;
+
+        if (initials === null) {
+
+            console.log("No value entered!");
+
+        } else {
+            let finalScore = {
+                initials: initials,
+                score: score,
+            }
+          
+            let scoreList = localStorage.getItem("scoreList");
+            if (scoreList === null) {
+                scoreList = [];
+            } else {
+                scoreList = JSON.parse(scoreList);
+            }
+            scoreList.push(finalScore);
+            let newScore = JSON.stringify(scoreList);
+            localStorage.setItem("scoreList", newScore);
+            window.location.replace("./HighScores.html");
+        }
+    });
 
 }
+

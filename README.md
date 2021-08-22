@@ -6,9 +6,10 @@ This is a code quiz written from scratch. The quiz takes users through code-rela
 ## Usage
 This quiz can be used to help show progress of JavaScript fundamentals. 
 
-When the start button is clicked, a timer starts and the user is shown the first question. Once the question is answered, the next question appears along with some text letting the user know if they were correct or not. If an incorrect answer is chosen, time is subtracted from the clock. Once there is no more time remaining or there are no more questions, the quiz is done. Users can then save their initials and score.
+When the start button is clicked, a timer starts and the user is shown the first question. Once the question is answered, the next question appears along with some text letting the user know if they were correct or not. If an incorrect answer is chosen, extra time is subtracted from the clock. Once there is no more time remaining or there are no more questions, the quiz is done. Users can then save their initials and score.
 
 ## Link
+https://camjade.github.io/Code-Quiz/
 
 ## Screenshots
 ![Question Correct](/Assets/CorrectAnswer.png)
