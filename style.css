@@ -60,3 +60,9 @@
   padding-left: 20%;
   border: none;
 }
+
+#highScore li {
+  text-decoration: none;
+  list-style-type: none;
+
+}
