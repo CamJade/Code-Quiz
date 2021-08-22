@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Code Quiz</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+        <!-- Title -->
+        <h1 class= "welcome">Welcome to the Coding Quiz!</h1>
+    </header>
+      
+    <main class = "container">
+      <section id ="firstSlide">
+        <p>Your goal is to answer the following code-related questions within the designated time limit. Watch out-- wrong answers will penalize your time by 10 seconds!</p>
+      
+        <div class="start">
+          <button id="startButton">Start Quiz</button>
+        </div>  
+      </section>
+
+      <section>
+        <!--section for question and option buttons-->
+        <div id="question-box">
+          <h2 id="question">Coding Quiz Challenge</h2>
+            <div id="option-buttons" class="optionbtns">
+              <button class = "btn">Option 1</button>
+              <button class = "btn">Option 2</button>
+              <button class = "btn">Option 3</button>
+              <button class = "btn">Option 4</button>
+            </div>
+        </div>
+      </section>
+        
+      <section>
+        <div class="high-scores"></div>
+      </section>
+
+      
+    </main>
+    <div class = "timer-box">
+      <section>
+        <!--timer section-->
+          <h3 id="timer">Timer</h3>
+          <div class = "timer-count">76</div>
+          <p>seconds remaining</p>
+        </div>
+      </section>
+    </div>
+    
+      <!--link to javascript-->
+      <script src="script.js"></script>
+  </body>
+</html>

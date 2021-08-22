@@ -1,0 +1,61 @@
+/*Set specific values to refer to later*/
+:root {
+    --white-color: rgb(222, 239, 253);
+    --purple-color: rgba(63, 17, 90, 0.692);
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start;
+    background: linear-gradient(0deg, var(--purple-color), var(--white-color) 63%);
+    text-align: center;
+  }
+.containter p {
+  text-align: center;
+  text-decoration: solid;
+}
+  .container {
+      position: absolute;
+      border: 2px dashed var(--purple-color);
+      top: 15%;
+      left: 25%;
+      right: 25%;
+      height: 500px;
+  }
+
+  .welcome {
+      text-align: center;
+      color: var(--purple-color);
+  }
+
+  .timer-box {
+    height: 15%;
+    width: 15%;
+    padding: 2%;
+    background: var(--purple-color);
+    color: var(--white-color);
+    text-align: center;
+    position: absolute;
+    left: 85%;
+  }
+  
+.timer-box h3{
+  border: 0%;
+  margin: 0%;
+} 
+
+.optionbtns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 85%;
+  padding-left: 20%;
+}
